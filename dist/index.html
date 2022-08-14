@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Front page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./styles/bundle.min.css">
+</head>
+<body>
+	<div class="Wrap">
+		<header class="Header">
+			<div class="Header__grid container-wide">
+		
+				<a href="/" class="Logo Header__logo" aria-label="logo">
+					<img src="images/logo.svg" alt="">
+				</a>
+		
+				<nav class="NavMain Header__nav">
+					<ul>
+						<li class="NavMain__item">
+		
+							<div class="Dropdown">
+								<button class="Dropdown__button">
+									<svg class="Icon Dropdown__arrow">
+				<use href="#icon-arrow-triangle">
+			</svg>
+									Каталог
+								</button>
+								<ul class="Dropdown__list">
+									<li><a href="">Ёжики</a></li>
+									<li><a href="">Питание</a></li>
+									<li><a href="">Переноски</a></li>
+									<li><a href="">Лекарства</a></li>
+								</ul>
+							</div>
+		
+						</li>
+						<li class="NavMain__item">
+							<a href="">О нас</a>
+						</li>
+						<li class="NavMain__item">
+							<a href="">Контакты</a>
+						</li>
+						<li class="NavMain__item">
+							<a href="">Галерея</a>
+						</li>
+					</ul>
+				</nav>
+		
+				<a href="tel:+79655698998" class="Phone Header__phone">
+					<span class="Circle -brandGradient">
+						<svg class="Icon -phone">
+				<use href="#icon-phone">
+			</svg>
+					</span>
+					<span class="d-none xl:d-block">+7 (965) 569-89-98</span>
+				</a>
+		
+				<a href="" class="Header__cart">
+					<div class="Circle -brand -xs Header__cartCounter">1</div>
+					<svg class="Icon">
+				<use href="#icon-basket">
+			</svg>
+				</a>
+		
+			</div>
+		
+			<button class="NavMobileOpener">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		
+			<nav class="NavMobile">
+				<ul class="">
+					<li><a href="">Каталог</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Галерея</a></li>
+				</ul>
+				<a href="tel:+79655698998" class="NavMobile__phone">+7 (965) 569-89-98</a>
+			</nav>
+		
+		</header>
+		
+
+		<main class="Main">
+			
+				<div class="Hero">
+					<div class="Hero__container container">
+				
+						<div class="Hero__text">
+				
+							<h1 class="Hero__heading">
+								<img src="images/hero-heading.svg" alt="Ёжики">
+								тоже любят молоко
+							</h1>
+				
+							<p>Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+				
+							<button class="Btn -wide mt-050 md:mt-150 lg:mt-200">Купить ёжика</button>
+				
+						</div>
+				
+					</div>
+				
+					<div class="Hero__decor -spot1"></div>
+					<div class="Hero__decor -spot2"></div>
+					<img src="images/hedgehog-1.png" class="Hero__decor -hedgehog1">
+					<img src="images/hedgehog-2.png" class="Hero__decor -hedgehog2">
+				
+				</div>
+				
+				<div class="FeatureSet">
+				
+					<div class="Feature">
+						<div class="Circle -lg -brand">
+							<svg class="Icon -hedgehog">
+						<use href="#icon-hedgehog">
+					</svg>
+						</div>
+						<h5>разведение ежиков</h5>
+						<p>Собственная ферма, уход и содержание</p>
+					</div>
+				
+					<div class="Feature">
+						<div class="Circle -lg -brand2">
+							<svg class="Icon -syringe">
+						<use href="#icon-syringe">
+					</svg>
+						</div>
+						<h5>здоровье</h5>
+						<p>Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+					</div>
+				
+					<div class="Feature">
+						<div class="Circle -lg">
+							<svg class="Icon -heart">
+						<use href="#icon-heart">
+					</svg>
+						</div>
+						<h5>любовь и забота</h5>
+						<p>Каждому ежику мы дарим много внимания</p>
+					</div>
+				
+				</div>
+			
+				<div class="Section">
+					<div class="container">
+			
+						<div class="Slider"
+							data-slides="2"
+							data-space-between="40"
+							>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+			
+										<article class="Card">
+											<div class="Card__bg"></div>
+											<div class="Badge Card__badge">-50 %</div>
+											<div class="Card__body">
+			
+												<h4>Ежик “Евгений”</h4>
+												<p>Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение</p>
+												<div class="Card__price">
+													<del>3 000 <svg class="Icon -roubleSm">
+					<use href="#icon-rouble">
+				</svg></del>
+													1 500 <svg class="Icon -rouble">
+					<use href="#icon-rouble">
+				</svg>
+												</div>
+			
+											</div>
+			
+											<img src="media/hedgehog-1.png" class="Card__image" alt="">
+			
+											<div class="Card__info d-flex md:d-none">
+			
+												<div class="d-flex align-center mr-100">
+													<svg class="Icon rect-0625 mr-025">
+					<use href="#icon-syringe">
+				</svg>
+													<div class="textCase-lower">Привит</div>
+												</div>
+			
+												<div class="d-flex align-center">
+													<svg class="Icon rect-0625 mr-025">
+					<use href="#icon-heart">
+				</svg>
+													<div class="textCase-lower">1235</div>
+												</div>
+			
+											</div>
+			
+											<div class="TooltipOrigin Card__info d-none md:d-block">
+												<svg class="Icon rect-200">
+					<use href="#icon-info">
+				</svg>
+			
+												<div class="Tooltip d-flex">
+			
+													<div class="d-flex align-center mr-150">
+														<svg class="Icon mr-050">
+					<use href="#icon-syringe">
+				</svg>
+														<div class="textCase-lower">Привит</div>
+													</div>
+			
+													<div class="d-flex align-center">
+														<svg class="Icon mr-050">
+					<use href="#icon-heart">
+				</svg>
+														<div class="textCase-lower">1235</div>
+													</div>
+			
+												</div>
+			
+											</div>
+			
+											<button class="Card__button">
+												<svg class="Icon -plus">
+					<use href="#icon-plus">
+				</svg>
+											</button>
+			
+										</article>
+			
+									</div>
+									<div class="swiper-slide">
+			
+										<article class="Card -brand2">
+											<div class="Card__bg"></div>
+											<div class="Badge Card__badge">-50 %</div>
+											<div class="Card__body">
+			
+												<h4>Ежик “Максим”</h4>
+												<p>Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+												<div class="Card__price">
+													<del>5 000 <svg class="Icon -roubleSm">
+					<use href="#icon-rouble">
+				</svg></del>
+													2 500 <svg class="Icon -rouble">
+					<use href="#icon-rouble">
+				</svg>
+												</div>
+			
+											</div>
+			
+											<img src="media/hedgehog-2.png" class="Card__image" alt="">
+			
+											<div class="TooltipOrigin Card__info">
+												<svg class="Icon rect-200">
+					<use href="#icon-info">
+				</svg>
+			
+												<div class="Tooltip d-flex">
+			
+													<div class="d-flex align-center mr-150">
+														<svg class="Icon mr-050">
+					<use href="#icon-syringe">
+				</svg>
+														<div class="textCase-lower">Привит</div>
+													</div>
+			
+													<div class="d-flex align-center">
+														<svg class="Icon mr-050">
+					<use href="#icon-heart">
+				</svg>
+														<div class="textCase-lower">1235</div>
+													</div>
+			
+												</div>
+			
+											</div>
+			
+											<button class="Card__button">
+												<svg class="Icon -plus">
+					<use href="#icon-plus">
+				</svg>
+											</button>
+			
+										</article>
+			
+									</div>
+									<div class="swiper-slide">
+			
+										<article class="Card">
+											<div class="Card__bg"></div>
+											<div class="Badge Card__badge">-50 %</div>
+											<div class="Card__body">
+			
+												<h4>Ежик “Евгений”</h4>
+												<p>Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение</p>
+												<div class="Card__price">
+													<del>3 000 <svg class="Icon -roubleSm">
+					<use href="#icon-rouble">
+				</svg></del>
+													1 500 <svg class="Icon -rouble">
+					<use href="#icon-rouble">
+				</svg>
+												</div>
+			
+											</div>
+			
+											<img src="media/hedgehog-1.png" class="Card__image" alt="">
+			
+											<div class="TooltipOrigin Card__info">
+												<svg class="Icon rect-200">
+					<use href="#icon-info">
+				</svg>
+			
+												<div class="Tooltip d-flex">
+			
+													<div class="d-flex align-center mr-150">
+														<svg class="Icon mr-050">
+					<use href="#icon-syringe">
+				</svg>
+														<div class="textCase-lower">Привит</div>
+													</div>
+			
+													<div class="d-flex align-center">
+														<svg class="Icon mr-050">
+					<use href="#icon-heart">
+				</svg>
+														<div class="textCase-lower">1235</div>
+													</div>
+			
+												</div>
+			
+											</div>
+			
+											<button class="Card__button">
+												<svg class="Icon -plus">
+					<use href="#icon-plus">
+				</svg>
+											</button>
+			
+										</article>
+			
+									</div>
+									<div class="swiper-slide">
+			
+										<article class="Card -brand2">
+											<div class="Card__bg"></div>
+											<div class="Badge Card__badge">-50 %</div>
+											<div class="Card__body">
+			
+												<h4>Ежик “Максим”</h4>
+												<p>Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+												<div class="Card__price">
+													<del>5 000 <svg class="Icon -roubleSm">
+					<use href="#icon-rouble">
+				</svg></del>
+													2 500 <svg class="Icon -rouble">
+					<use href="#icon-rouble">
+				</svg>
+												</div>
+			
+											</div>
+			
+											<img src="media/hedgehog-2.png" class="Card__image" alt="">
+			
+											<div class="TooltipOrigin Card__info">
+												<svg class="Icon rect-200">
+					<use href="#icon-info">
+				</svg>
+			
+												<div class="Tooltip d-flex">
+			
+													<div class="d-flex align-center mr-150">
+														<svg class="Icon mr-050">
+					<use href="#icon-syringe">
+				</svg>
+														<div class="textCase-lower">Привит</div>
+													</div>
+			
+													<div class="d-flex align-center">
+														<svg class="Icon mr-050">
+					<use href="#icon-heart">
+				</svg>
+														<div class="textCase-lower">1235</div>
+													</div>
+			
+												</div>
+			
+											</div>
+			
+											<button class="Card__button">
+												<svg class="Icon -plus">
+					<use href="#icon-plus">
+				</svg>
+											</button>
+			
+										</article>
+			
+									</div>
+								</div>
+							</div>
+			
+							<div class="swiper-button-prev">
+								<svg class="Icon">
+					<use href="#icon-arrow">
+				</svg>
+							</div>
+			
+							<div class="swiper-button-next">
+								<svg class="Icon rotate-180">
+					<use href="#icon-arrow">
+				</svg>
+							</div>
+						</div>
+			
+						<form class="Box -form">
+			
+							<h2>Заполните заявку и мы забронируем для Вас нового друга</h2>
+			
+							<div class="tile mb-200 md:mb-250">
+								<div class="row gap-lg justify-between align-center">
+									<div class="col-24 md:col-15 lg:col-12 xl:col-15">
+			
+										<div class="tile">
+											<div class="row gap-sm">
+												<div class="col-auto">
+			
+													<label class="Toggle">
+														<input type="radio" class="Toggle__input" name="for" value="1" checked="checked">
+														<span class="Toggle__button">хочу ёжика для себя</span>
+													</label>
+			
+												</div>
+												<div class="col-auto">
+			
+													<label class="Toggle">
+														<input type="radio" class="Toggle__input" name="for" value="2">
+														<span class="Toggle__button">хочу ёжика для детей</span>
+													</label>
+			
+												</div>
+												<div class="col-auto">
+			
+													<label class="Toggle">
+														<input type="radio" class="Toggle__input" name="for" value="3">
+														<span class="Toggle__button">хочу ёжика для разведения</span>
+													</label>
+			
+												</div>
+											</div>
+										</div>
+			
+									</div>
+									<div class="col-24 md:col-9 lg:col-12 xl:col-9">
+			
+										<div class="tile">
+											<div class="row">
+												<div class="col-24 sm:col-10 md:col-24 lg:col-12">
+			
+													<label class="Radio">
+														<input type="radio" name="quantity" id="" checked="checked">
+														<span class="Radio__label">Мне нужен 1-2 ёжика</span>
+													</label>
+			
+													<label class="Radio">
+														<input type="radio" name="quantity" id="">
+														<span class="Radio__label">Мне нужны 3-4 ёжика</span>
+													</label>
+			
+												</div>
+												<div class="col-24 sm:col-10 md:col-24 lg:col-12">
+			
+													<label class="Radio">
+														<input type="radio" name="quantity" id="">
+														<span class="Radio__label">Мне нужны 3 и более ёжиков</span>
+													</label>
+			
+													<label class="Radio">
+														<input type="radio" name="quantity" id="">
+														<span class="Radio__label">Пока присматриваюсь</span>
+													</label>
+			
+												</div>
+											</div>
+										</div>
+			
+									</div>
+								</div>
+							</div>
+			
+							<div class="tile">
+								<div class="row">
+									<div class="col-24 lg:col-8">
+			
+										<input type="text" class="FormInput" name="" placeholder="Ваше имя">
+			
+									</div>
+									<div class="col-24 lg:col-8">
+			
+										<input type="text" class="FormInput" name="" placeholder="Ваш телефон">
+			
+									</div>
+									<div class="col-24 lg:col-8">
+			
+										<input type="email" class="FormInput" name="" placeholder="Ваш e-mail">
+			
+									</div>
+									<div class="col-24">
+			
+										<textarea class="FormInput" name="" placeholder="Комментарий к заявке" ></textarea>
+			
+									</div>
+								</div>
+							</div>
+			
+							<div class="Box__actions">
+			
+								<button class="Btn -wide">Купить ёжика</button>
+			
+							</div>
+						</form>
+			
+						<div class="md:text-center mt-300 md:mt-400">
+			
+							<div class="font-decor fw-700 fz-150 lh-120  d-block md:d-flex justify-center align-center">
+								<svg class="Icon -hedgehogDark mr-075">
+					<use href="#icon-hedgehog-dark">
+				</svg>
+								<div>У нас осталось еще: <a href="">25 ёжиков</a></div>
+							</div>
+			
+							<div class="row justify-center mt-150">
+								<div class="col-24 md:col-7 lg:col-6 xl:col-4">
+			
+									<div class="">Торопитесь! Акция действует <span class="nowrap">до 26. 02. 2023</span></div>
+			
+								</div>
+							</div>
+			
+						</div>
+			
+					</div>
+				</div>
+			
+		</main>
+
+		<footer class="Footer">
+			<div class="Footer__grid container-wide">
+		
+				<a href="/" class="Logo Footer__logo" aria-label="logo">
+					<img src="images/logo-inverse.svg" alt="">
+				</a>
+		
+				<div class="Footer__info">
+					Все права защищены.<br>
+					Указанная стоимость товаров и условия их приобретения действительны на текущую дату.
+				</div>
+		
+				<nav class="NavMain Footer__nav">
+					<ul>
+						<li class="NavMain__item">
+							<a href="">Каталог</a>
+						</li>
+						<li class="NavMain__item">
+							<a href="">О нас</a>
+						</li>
+						<li class="NavMain__item">
+							<a href="">Контакты</a>
+						</li>
+						<li class="NavMain__item">
+							<a href="">Галерея</a>
+						</li>
+					</ul>
+				</nav>
+		
+				<ul class="SocialLinks Footer__social">
+					<li>
+						<a href="" class="SocialLink">
+							<svg class="Icon">
+				<use href="#icon-instagram">
+			</svg>
+						</a>
+					</li>
+					<li>
+						<a href="" class="SocialLink">
+							<svg class="Icon">
+				<use href="#icon-facebook">
+			</svg>
+						</a>
+					</li>
+					<li>
+						<a href="" class="SocialLink">
+							<svg class="Icon">
+				<use href="#icon-twitter">
+			</svg>
+						</a>
+					</li>
+				</ul>
+		
+				<a href="tel:+79655698998" class="Phone Footer__phone">+7 (965) 569-89-98</a>
+		
+			</div>
+		</footer>
+
+	</div>
+	<script src="./scripts/bundle.min.js"></script>
+</body>
+</html>

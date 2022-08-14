@@ -1,0 +1,65 @@
+.Icon {
+	height: 1.25rem;
+	width: 1.25rem;
+	display: inline-block;
+	flex-shrink: 0;
+	fill: currentColor;
+	transition:
+	opacity $duration-sm,
+	fill $duration-sm,
+	transform $duration-sm,
+	stroke $duration-sm;
+}
+
+.Icon.-hedgehog {
+	width: 62px;
+}
+
+.Icon.-syringe {
+	width: 36px;
+}
+
+.Icon.-heart {
+	width: 37px;
+}
+
+.Icon.-hedgehog,
+.Icon.-syringe,
+.Icon.-heart {
+	height: clamp(21px, 4vw, 36px);
+}
+
+.Icon.-hedgehogDark {
+	width: 36px;
+	height: 24px;
+}
+
+.Icon.-rouble {
+	width: 20px;
+	height: 26px;
+}
+
+.Icon.-roubleSm {
+	width: 10px;
+	height: 13px;
+}
+
+.Icon.-phone {
+	width: 15px;
+	height: 13px;
+
+	@include mediaUp(md) {
+		width: 18px;
+		height: 18px;
+	}
+
+	@include mediaUp(lg) {
+		width: 20px;
+		height: 20px;
+	}
+
+	@include mediaUp(xl) {
+		width: 24px;
+		height: 24px;
+	}
+}

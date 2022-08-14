@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'Cormorant Infant';
+	src: local('Cormorant Infant'),
+		local('CormorantInfant-Regular'),
+		url('../fonts/CormorantInfant/Cormorantinfant.woff2') format('woff2'),
+		url('../fonts/CormorantInfant/Cormorantinfant.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cormorant Infant';
+	src: local('Cormorant Infant Bold'),
+		local('CormorantInfant-Bold'),
+		url('../fonts/CormorantInfant/Cormorantinfantbold.woff2') format('woff2'),
+		url('../fonts/CormorantInfant/Cormorantinfantbold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: local('Raleway'),
+		url('../fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
+		url('../fonts/Raleway/Raleway-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: local('Raleway Medium'),
+		url('../fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+		url('../fonts/Raleway/Raleway-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: local('Raleway Bold'),
+		url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
+		url('../fonts/Raleway/Raleway-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}

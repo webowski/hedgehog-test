@@ -1,0 +1,139 @@
+.Footer {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	background-color: var(--minor);
+	color: var(--inverse);
+
+	@include mediaUp(md) {
+		padding-top: 1.875rem;
+		padding-bottom: 1.875rem;
+	}
+}
+
+.Footer a {
+	color: var(--inverse);
+}
+
+.Footer__grid {
+	display: grid;
+	gap: 1.5rem;
+	grid-template:
+		"logo  social"
+		"nav   social"
+		"phone phone "
+		"info  info  "
+	;
+
+	@include mediaUp(sm) {
+		align-items: center;
+		grid-template:
+			"logo nav  social"
+			"logo nav  phone "
+			"info info info  "
+		;
+	}
+
+	@include mediaUp(md) {
+		gap: 2rem;
+		grid-template:
+			"logo nav social"
+			"info nav phone "
+		;
+	}
+
+	@include mediaUp(lg) {
+		grid-template:
+			"logo nav social"
+			"info nav phone"
+		;
+	}
+
+	@include mediaUp(xl) {
+		gap: 4rem;
+	}
+
+	@include mediaUp(xxl) {
+		gap: 4rem;
+		grid-template:
+			"logo nav social phone"
+			"info nav social phone"
+		;
+	}
+}
+
+.Footer__logo {
+	grid-area: logo;
+	width: 120px;
+
+	@include mediaUp(sm) {
+		align-self: start;
+	}
+
+	@include mediaUp(lg) {
+		margin-top: 1.125rem;
+	}
+}
+
+.Footer__info {
+	grid-area: info;
+	margin-top: 2.125rem;
+	font-size: .6875rem;
+	line-height: 1.31;
+
+	@include mediaUp(sm) {
+		margin-top: .75rem;
+	}
+
+	@include mediaUp(md) {
+		margin-top: 0;
+	}
+
+	@include mediaUp(lg) {
+		margin-top: 1.5rem;
+		font-size: .5625rem;
+	}
+
+	@include mediaUp(xl) {
+		margin-top: 0;
+	}
+}
+
+.Footer__nav {
+	grid-area: nav;
+	margin-top: 2.25rem;
+
+	@include mediaUp(sm) {
+		margin-top: 0;
+	}
+
+	@include mediaUp(xxl) {
+		margin-left: auto;
+	}
+}
+
+.Footer__social {
+	grid-area: social;
+	margin-left: auto;
+
+	@include mediaUp(xxl) {
+		margin-left: 2.25rem;
+	}
+}
+
+.Footer__phone {
+	margin-top: 1.875rem;
+	grid-area: phone;
+
+	@include mediaUp(sm) {
+		margin-left: auto;
+	}
+
+	@include mediaUp(xl) {
+		margin-top: 0;
+	}
+
+	@include mediaUp(xxl) {
+		margin-left: .5rem;
+		margin-top: 0;
+	}
+}

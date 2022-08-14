@@ -1,0 +1,45 @@
+.Tooltip {
+	padding: 28px 29px;
+	position: absolute;
+	top: calc(100% + 9px);
+	right: -28px;
+  isolation: isolate;
+	z-index: 10;
+	background-color: var(--major);
+	color: white;
+	font-size: .875rem;
+	line-height: 1.2;
+	cursor: default;
+	opacity: 0;
+	transform: translateY(-8px);
+	visibility: hidden;
+	transition:
+		opacity $duration-sm,
+		transform $duration-sm,
+		visibility 0s linear $duration-sm;
+}
+
+.Tooltip:before {
+	@include pseudoBlock(28px, 9px);
+	top: -9px;
+	left: calc(100% - 57.5px);
+	background-color: var(--major);
+	clip-path: polygon(
+		50% 0,
+		100% 100%,
+		0 100%
+	);
+}
+
+.TooltipOrigin {
+	cursor: pointer;
+}
+
+.TooltipOrigin:hover .Tooltip {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+	transition:
+		opacity $duration-sm,
+		transform $duration-sm;
+}

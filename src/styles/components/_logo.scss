@@ -1,0 +1,11 @@
+.Logo {
+	@include linkReset;
+	width: clamp(59px, 16vw, 122px);
+	display: block;
+	flex-shrink: 0;
+}
+
+.Logo img {
+	display: block;
+	width: 100%;
+}

@@ -1,0 +1,173 @@
+.NavMain {
+	z-index: 1;
+	font-size: 1rem;
+	line-height: 1.2;
+	font-family: var(--fontDecor);
+	font-weight: bold;
+}
+
+.NavMain > ul {
+	@include listReset(true);
+	display: flex;
+	flex-direction: column;
+	gap: 1.875rem;
+
+	@include mediaUp(sm) {
+		gap: 1.25rem;
+	}
+
+	@include mediaUp(lg) {
+		display: flex;
+		flex-direction: row;
+		// gap: 2.6rem;
+		gap: clamp(2.6rem, 4.4vw, 5.6rem);
+	}
+}
+
+.NavMain__item {
+	display: flex;
+	align-items: center;
+}
+
+.NavMain__item > a {
+	@include linkReset;
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.NavMobileOpener {
+	@include buttonReset;
+	display: block;
+	width: 25px;
+	height: 18px;
+	position: absolute;
+	top: 21px;
+	left: 24px;
+	z-index: 51;
+	cursor: pointer;
+
+	span {
+		display: block;
+		position: absolute;
+		height: 2px;
+		width: 100%;
+		background-color: var(--major);
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition:
+			$duration ease-in-out;
+	}
+
+	span:nth-child(1) {
+		top: 0px;
+	}
+
+	span:nth-child(2),
+	span:nth-child(3) {
+		top: 8px;
+	}
+
+	span:nth-child(4) {
+		top: 16px;
+	}
+
+	@include mediaUp(sm) {
+		top: 32px;
+		left: var(--sidePadding);
+	}
+
+	@include mediaUp(md) {
+		top: 40px;
+	}
+
+	@include mediaUp(lg) {
+		display: none;
+	}
+}
+
+.NavMobileOpener.is-open {
+
+	span:nth-child(1) {
+		top: 10px;
+		transform: scaleX(0);
+	}
+
+	span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+
+	span:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+
+	span:nth-child(4) {
+		top: 10px;
+		transform: scaleX(0);
+	}
+}
+
+.NavMobile {
+	width: calc(100vw - var(--sidePadding));
+	min-height: 480px;
+	padding: 100px 38px 42px;
+	transform: translate3d(-100%, 0px, 0);
+	display: grid;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--bg);
+	border-radius: 0 10px 10px 0;
+	box-shadow: none;
+	color: var(--major);
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: bold;
+	z-index: 50;
+	will-change: transform;
+	transition:
+		transform $duration,
+		box-shadow $duration;
+
+	ul {
+		@include listReset(true);
+		margin-bottom: auto;
+		text-align: left;
+		font-family: var(--fontDecor);
+		text-transform: uppercase;
+
+		> li + li {
+			margin-top: 19px;
+		}
+	}
+
+	a {
+		@include linkReset;
+		color: var(--major);
+	}
+
+	@include mediaUp(sm) {
+		width: calc(50vw + 80px);
+	}
+
+	@include mediaUp(md) {
+		width: calc(50vw - 80px);
+		max-width: 300px;
+	}
+
+	@include mediaUp(lg) {
+		display: none;
+	}
+}
+
+.NavMobile__phone {
+	margin-top: auto;
+}
+
+.NavMobile.is-open {
+	transform: translate3d(0, 0, 0);
+	box-shadow: 4px 4px 20px #E3E3E3;
+}

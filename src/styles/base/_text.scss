@@ -1,0 +1,98 @@
+html {
+	font-size: $rem;
+}
+
+body {
+	color: var(--major);
+	font-family: var(--fontMain);
+	font-size: var(--fontSize);
+	line-height: var(--lineHeight);
+}
+
+a {
+	@include linkReset;
+	color: var(--major);
+	text-decoration: underline;
+	text-underline-position: under;
+	transition:
+		color $duration-sm,
+		border-color $duration-sm,
+		background-color $duration-sm,
+		box-shadow $duration-sm;
+}
+
+a:is(:hover) {
+	text-decoration: none;
+}
+
+p {
+	@include flowMargin;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	@include mediaUp(md) {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin-top: 2.2rem;
+	margin-bottom: 1rem;
+	@include flowMargin;
+	color: var(--major);
+	font-family: var(--fontDecor);
+	line-height: 1.2;
+	font-weight: bold;
+
+	@include mediaUp(md) {
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+	}
+}
+
+h1, .h1 {
+	font-size: 1.5rem;
+	line-height: 1.2;
+
+	@include mediaUp(md) {
+		font-size: 3.125rem;
+		line-height: 1;
+	}
+}
+
+h2, .h2 {
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	line-height: 1.2;
+
+	@include mediaUp(md) {
+		margin-bottom: 2rem;
+		font-size: 2.8125rem;
+	}
+}
+
+h3, .h3 {
+	font-size: 1.25rem;
+
+	@include mediaUp(md) {
+		font-size: 2.5rem;
+	}
+}
+
+h4, .h4 {
+	font-size: 1rem;
+
+	@include mediaUp(md) {
+		font-size: 1.5rem;
+	}
+}
+
+h5, .h5 {
+	font-size: .875rem;
+
+	@include mediaUp(md) {
+		font-size: 1rem;
+	}
+}

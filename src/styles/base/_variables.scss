@@ -1,0 +1,74 @@
+// Text
+// ---------------------
+$fontSans:                  'Raleway', sans-serif;
+$fontMain:                  $fontSans;
+$fontDecor:                 'Cormorant Infant', sans-serif;
+$rem:                       16px;
+
+
+// Colors
+// ---------------------
+// absolute colors
+$white:                     #ffffff;
+$black:                     #000000;
+$biege:                     #FFEDCD;
+$limeDim:                   #E2F0DF;
+$cyanDim:                   #B0D3CE;
+$gray:                      #195557;
+$grayLight:                 #70908B;
+$grayLighter:               #EAEEEF;
+$grayLightest:              #f8f8f8;
+
+// semantic colors
+$brand:                     $biege;
+$brand2:                    $limeDim;
+$brand3:                    $cyanDim;
+$voice:                     $gray;
+$intense:                   $black;
+$major:                     $gray;
+$minor:                     $grayLight;
+$muted:                     #C2CCCA;
+$mutedLighter:              $grayLighter;
+$mutedLightest:             $grayLightest;
+$inverse:                   $white;
+$bg:                        $white;
+
+
+// Breakpoints
+// ---------------------
+$xs:    0;
+$sm:    576px;
+$md:    768px;
+$lg:    992px;
+$xl:    1200px;
+$xxl:   1600px;
+
+$breakpoints: (
+	xs: $xs,
+	sm: $sm,
+	md: $md,
+	lg: $lg,
+	xl: $xl,
+	xxl: $xxl,
+);
+
+
+// Container
+// ---------------------
+$containerMax:              1200px;
+
+
+// Columns
+// ---------------------
+$columns:                   24;
+$gap:                       20px;
+$gap-sm:                    14px;
+$gap-lg:                    30px;
+
+
+// Transition & Animation
+// ---------------------
+$duration-sm:               .12s;
+$duration:                  .2s;
+$duration-lg:               .3s;
+$duration-xl:               .6s;

@@ -1,0 +1,70 @@
+<header class="Header">
+	<div class="Header__grid container-wide">
+
+		<a href="/" class="Logo Header__logo" aria-label="logo">
+			<img src="../../images/logo.svg" alt="">
+		</a>
+
+		<nav class="NavMain Header__nav">
+			<ul>
+				<li class="NavMain__item">
+
+					<div class="Dropdown">
+						<button class="Dropdown__button">
+							{{icon "arrow-triangle" class="Icon Dropdown__arrow"}}
+							Каталог
+						</button>
+						<ul class="Dropdown__list">
+							<li><a href="">Ёжики</a></li>
+							<li><a href="">Питание</a></li>
+							<li><a href="">Переноски</a></li>
+							<li><a href="">Лекарства</a></li>
+						</ul>
+					</div>
+
+				</li>
+				<li class="NavMain__item">
+					<a href="">О нас</a>
+				</li>
+				<li class="NavMain__item">
+					<a href="">Контакты</a>
+				</li>
+				<li class="NavMain__item">
+					<a href="">Галерея</a>
+				</li>
+			</ul>
+		</nav>
+
+		<a href="tel:+79655698998" class="Phone Header__phone">
+			<span class="Circle -brandGradient">
+				{{icon "phone" class="Icon -phone"}}
+			</span>
+			<span class="d-none xl:d-block">+7 (965) 569-89-98</span>
+		</a>
+
+		<a href="" class="Header__cart">
+			<div class="Circle -brand -xs Header__cartCounter">1</div>
+			{{icon "basket" class="Icon"}}
+		</a>
+
+	</div>
+
+	<button class="NavMobileOpener">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+
+	<nav class="NavMobile">
+		<ul class="">
+			<li><a href="">Каталог</a></li>
+			<li><a href="">О нас</a></li>
+			<li><a href="">Контакты</a></li>
+			<li><a href="">Галерея</a></li>
+		</ul>
+		<a href="tel:+79655698998" class="NavMobile__phone">+7 (965) 569-89-98</a>
+	</nav>
+
+</header>
+

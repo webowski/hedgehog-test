@@ -1,0 +1,64 @@
+.Btn {
+	width: auto;
+	max-width: 100%;
+	padding: 21px 32px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	appearance: none;
+	background-position: 50%;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-image: none;
+	background-color: var(--minor);
+	border-radius: 69px;
+	box-shadow:
+		4px 4px 20px #C2CCCA,
+		-8px -8px 20px #FFFFFF;
+	color: var(--inverse);
+	font-size: .875rem;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-decoration: none;
+	text-align: center;
+	text-transform: none;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+
+	@include mediaUp(md) {
+		padding: 26px 32px;
+	}
+}
+
+.Btn:hover {
+	border-color: $brand;
+	background-image: linear-gradient(to left, var(--brand), var(--brand3));
+	box-shadow:
+		4px 4px 20px #C2CCCA,
+		-8px -8px 20px #FFFFFF;
+	color: var(--major);
+
+	@include mediaUp(md) {
+
+	}
+}
+
+.Btn:active {
+
+	@include mediaUp(md) {
+		box-shadow: none !important;
+		transform: translateY(1px);
+	}
+}
+
+.Btn:focus {
+	outline: none;
+}
+
+.Btn.-wide {
+	width: 100%;
+	max-width: 328px;
+}

@@ -1,0 +1,63 @@
+@import '../../../node_modules/swiper/swiper.scss';
+
+.Slider {
+	position: relative;
+	padding-left: 0rem;
+	padding-right: 0rem;
+	user-select: none;
+}
+
+.Slider .swiper-container {
+	height: 100%;
+	padding-top: 6px;
+
+	@include mediaUp(md) {
+		overflow: hidden;
+	}
+}
+
+.Slider .swiper-wrapper {
+	align-items: stretch;
+}
+
+.Slider .swiper-slide {
+	height: auto;
+
+	@include mediaDown(md) {
+		width: auto;
+	}
+}
+
+.Slider .swiper-button-prev.swiper-button-disabled,
+.Slider .swiper-button-next.swiper-button-disabled {
+	opacity: .3;
+	pointer-events: none;
+}
+
+.Slider .swiper-button-prev,
+.Slider .swiper-button-next {
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
+	position: absolute;
+	top: calc(50% - .75rem);
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.Icon {
+		width: 100%;
+		height: 100%;
+		display: block;
+		fill: #b1b1b1;
+	}
+}
+
+.Slider .swiper-button-prev {
+	left: -59px;
+}
+
+.Slider .swiper-button-next {
+	right: -59px;
+}

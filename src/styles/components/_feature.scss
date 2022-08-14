@@ -1,0 +1,89 @@
+.FeatureSet {
+	position: relative;
+	z-index: 10;
+	// margin-top: clamp(48px, 10vw, 124px);
+	margin-bottom: clamp(55px, 10vw, 96px);
+	padding-left: var(--sidePadding);
+	padding-right: var(--sidePadding);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	@include mediaDown(md) {
+		margin-top: -100px;
+	}
+
+	@include mediaUp(md) {
+		margin-top: calc(-1 * clamp(100px, 35vw, 330px));
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+		gap: clamp(30px, 5vw, 155px);
+	}
+
+	@include mediaUp(lg) {
+		// margin-top: calc(-1 * clamp(100px, 21vw, 227px));
+	}
+
+	@include mediaUp(xl) {
+		max-width: 70vw;
+		margin-top: calc(-1 * clamp(100px, 14vw, 270px));
+	}
+
+	@include mediaUp(xxl) {
+		max-width: 70vw;
+		max-width: none;
+		flex-wrap: nowrap;
+	}
+}
+
+.Feature {
+	text-align: left;
+
+	@include mediaDown(md) {
+		flex-basis: calc(50% - 10px);
+	}
+
+	@include mediaUp(md) {
+		max-width: clamp(145px, 30vw, 182px);
+		text-align: center;
+	}
+
+	@include mediaDown(xl) {
+		&:nth-child(1) {
+			flex-basis: 100%;
+			max-width: none;
+		}
+	}
+
+	@include mediaUp(xl) {
+
+		&:nth-child(1),
+		&:nth-child(3) {
+			margin-top: 22px;
+		}
+	}
+}
+
+.Feature .Circle {
+	@include mediaUp(md) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.Feature h5 {
+	margin-top: clamp(1rem, 2vw, 1.875rem);
+	margin-bottom: clamp(.25rem, 2vw, .5rem);
+	text-transform: uppercase;
+}
+
+.Feature p {
+	margin-top: 0;
+	font-size: .625rem;
+	line-height: 1.57;
+
+	@include mediaUp(sm) {
+		font-size: .75rem;
+	}
+}

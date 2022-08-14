@@ -1,0 +1,123 @@
+.Hero {
+	position: relative;
+	z-index: 0;
+	background-image: url('../images/bg@xs.png');
+	background-size: 100%;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+
+	@include mediaDown(md) {
+		padding-bottom: 150px;
+	}
+
+	@include mediaUp(md) {
+		padding-bottom: 420px;
+		background-image: url('../images/bg.png');
+		background-position: 50% 100%;
+		min-height: 100vh;
+	}
+}
+
+.Hero__container {
+	position: relative;
+	z-index: 3;
+}
+
+.Hero__decor {
+	position: absolute;
+	pointer-events: none;
+	z-index: 0;
+	visibility: visible;
+	max-width: none;
+}
+
+.Hero__decor.-spot1 {
+	display: none;
+
+	@include mediaUp(md) {
+		--w: 1048px;
+		--h: 1048px;
+		width: var(--w);
+		height: var(--h);
+		display: block;
+		left: 0;
+		top: 0;
+		transform: translate(-50.85%, -45.22%);
+		background-image: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(180, 197, 194, 0.83) 0%,
+			rgba(224, 225, 225, 0) 100%
+		);
+	}
+}
+
+.Hero__decor.-spot2 {
+	display: none;
+
+	@include mediaUp(md) {
+		--w: 1582px;
+		--h: 1582px;
+		width: var(--w);
+		height: var(--h);
+		display: block;
+		right: 0;
+		bottom: 0;
+		transform: translate(43.61%, 25.85%);
+		background-image: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(255, 238, 206, 0.49) 0%,
+			rgba(196, 196, 196, 0) 100%
+		);
+	}
+}
+
+.Hero__decor.-hedgehog1 {
+	display: none;
+
+	@include mediaUp(md) {
+		width: clamp(344px, 42vw, 686px);
+		display: block;
+		left: 0;
+		bottom: 0;
+		transform: translate(-33.2%, 18.3%);
+	}
+}
+
+.Hero__decor.-hedgehog2 {
+	width: clamp(388px, 72vw, 795px);
+	height: auto;
+	right: 0;
+	bottom: 0;
+	transform: translate(
+		clamp(36.6%, 23vw, 42.6%),
+		20.9%
+	);
+}
+
+.Hero__heading {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--minor);
+	font-size: clamp(1.5rem, 3.6vw, 3.125rem);
+}
+
+.Hero__heading img {
+	display: block;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width: clamp(202px, 30vw, 444px);
+
+	@include mediaUp(md) {
+		margin-left: auto;
+		margin-bottom: 20px;
+	}
+}
+
+.Hero__text {
+	padding-top: clamp(84px, 18vw, 290px);
+	color: var(--minor);
+
+	@include mediaUp(md) {
+		text-align: center;
+	}
+}

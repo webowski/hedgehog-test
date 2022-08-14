@@ -1,0 +1,116 @@
+.Header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+
+	@include mediaUp(md) {
+		padding-top: 30px;
+		padding-bottom: 48px;
+	}
+
+	@include mediaUp(lg) {
+		padding-top: 42px;
+		padding-bottom: 42px;
+	}
+
+	@include mediaUp(xl) {
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+}
+
+.Header__grid {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	@include mediaUp(lg) {
+		justify-content: space-between;
+	}
+}
+
+.Header__logo {
+	align-self: flex-start;
+	position: relative;
+
+	@include mediaDown(lg) {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		top: 25px;
+		right: 0;
+		left: 0;
+		z-index: 51;
+	}
+
+	@include mediaUp(lg) {
+		margin-right: auto;
+		margin-top: -13px;
+	}
+}
+
+.Header__nav {
+	display: none;
+
+	@include mediaUp(lg) {
+		display: block;
+	}
+}
+
+.Header__phone {
+	@include linkReset;
+	display: flex;
+	align-items: center;
+	font-size: 1.375rem;
+	font-weight: 500;
+
+	@include mediaUp(lg) {
+		margin-left: 46px;
+	}
+
+	@include mediaUp(xl) {
+		margin-left: 82px;
+	}
+
+	@include mediaUp(xxl) {
+		margin-left: 132px;
+	}
+}
+
+.Header__phone .Circle {
+	@include mediaUp(lg) {
+		margin-right: 1.25rem;
+	}
+}
+
+.Header__cart {
+	position: relative;
+
+	@include mediaUp(lg) {
+		margin-left: 40px;
+	}
+
+	@include mediaUp(xl) {
+		margin-left: 60px;
+	}
+
+	@include mediaUp(xxl) {
+		margin-left: 80px;
+	}
+}
+
+.Header__cartCounter {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	background-color: #fff;
+}
+
+.Header__cart .Icon {
+	width: clamp(24px, 4vw, 38px);
+	height: clamp(22px, 4vw, 34px);
+}

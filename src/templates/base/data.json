@@ -1,0 +1,9 @@
+{
+  "lang": "ru",
+  "nav": [
+    { "url": "/", "title": "Каталог" },
+    { "url": "/about.html", "title": "О нас" },
+    { "url": "/contacts.html", "title": "Контакты" },
+    { "url": "/gallery.html", "title": "Галерея" }
+  ]
+}

@@ -1,0 +1,52 @@
+.Box {
+	--boxPadding: 2.5rem var(--sidePadding);
+	--marginB: 1.5rem;
+	padding: var(--boxPadding);
+	margin-top: 1.5rem;
+	margin-bottom: var(--marginB);
+	@include flowMargin;
+	background-color: var(--mutedLighter);
+	position: relative;
+
+	@include mediaDown(md) {
+		margin-left: calc(-1 * var(--sidePadding));
+		margin-right: calc(-1 * var(--sidePadding));
+	}
+
+	@include mediaUp(md) {
+		--boxPadding: 3rem;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		border-radius: 30px;
+	}
+}
+
+.Box.-form {
+	--marginB: calc(3rem + 35px);
+	margin-top: 51px;
+	margin-bottom: 3rem;
+
+	@include mediaUp(md) {
+		--marginB: calc(4rem + 35px);
+		margin-top: 90px;
+		padding-bottom: 79px;
+	}
+}
+
+.Box.-form .Box__actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include mediaDown(md) {
+		margin-top: 1.5rem;
+	}
+
+	@include mediaUp(md) {
+		position: absolute;
+		bottom: -35px;
+		left: 0;
+		right: 0;
+	}
+}
+

@@ -1,0 +1,38 @@
+.SocialLinks {
+	@include listReset(true);
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+
+	@include mediaUp(sm) {
+		flex-direction: row;
+	}
+
+	@include mediaUp(md) {
+		flex-direction: row;
+	}
+
+	@include mediaUp(lg) {
+		flex-direction: row;
+		gap: 1.375rem;
+	}
+
+	@include mediaUp(xl) {
+
+	}
+}
+
+.SocialLink {
+	display: block;
+	width: max-content;
+}
+
+.SocialLink:hover {
+	color: var(--brand);
+}
+
+.SocialLink .Icon {
+	width: 1.875rem;
+	height: 1.875rem;
+	display: block;
+}

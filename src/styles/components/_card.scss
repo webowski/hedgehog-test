@@ -1,0 +1,128 @@
+.Card {
+	--cardW: 244px;
+	--cornerSize: 60px;
+	--cardBg: var(--brand);
+	--cardSidePadding: 29px;
+	width: var(--cardW);
+	padding: 44px var(--cardSidePadding) 26px;
+	position: relative;
+
+	@include mediaUp(sm) {
+		--cardW: auto;
+	}
+
+	@include mediaUp(md) {
+		--cardSidePadding: 59px;
+		padding-top: 54px;
+		padding-bottom: 58px;
+	}
+}
+
+.Card__badge {
+	position: absolute;
+	left: var(--cardSidePadding);
+	top: -6px;
+}
+
+.Card__body {
+	width: 200px;
+}
+
+.Card__body p {
+	margin-top: 0;
+	margin-bottom: .5rem;
+	max-width: 114px;
+	min-height: 114px;
+	font-size: .6875rem;
+
+	@include mediaUp(md) {
+		max-width: 182px;
+		font-size: .875rem;
+	}
+}
+
+.Card h4 {
+	margin-bottom: .5rem;
+	font-size: 1.875rem;
+	line-height: 1;
+
+	@include mediaUp(md) {
+		margin-bottom: 1rem;
+		font-size: 2.5rem;
+		line-height: 1.2;
+	}
+}
+
+.Card__price {
+	font-family: var(--fontDecor);
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 1.1;
+}
+
+.Card__price del {
+	color: var(--muted);
+	display: block;
+	width: max-content;
+	text-decoration: none;
+	position: relative;
+	font-size: 1.25rem;
+}
+
+.Card__price del:after {
+	@include pseudoBlock(100%, 1px);
+	top: 54%;
+	background-color: var(--muted);
+}
+
+.Card__bg {
+	position: absolute;
+	inset: 0;
+	border-radius: 20px;
+	background-color: var(--cardBg);
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% calc(100% - var(--cornerSize)),
+		calc(100% - var(--cornerSize)) 100%,
+		0 100%
+	);
+	z-index: -1;
+}
+
+.Card__image {
+	position: absolute;
+	right: -62px;
+	bottom: 27px;
+	pointer-events: none;
+	width: clamp(186px, 34vw, 430px);
+
+	@include mediaDown(md) {
+		width: clamp(186px, 30vw, 330px);
+	}
+
+	@include mediaUp(md) {
+		// width: 430px;
+		right: -62px;
+		bottom: -36px;
+	}
+}
+
+.Card__button {
+	@include buttonReset;
+	padding-top: 1.75rem;
+	padding-left: 1.75rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.Card__info {
+	position: absolute;
+	top: 21px;
+	right: 30px;
+}
+
+.Card.-brand2 {
+	--cardBg: var(--brand2);
+}

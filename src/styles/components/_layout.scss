@@ -1,0 +1,24 @@
+body {
+	background-color: var(--bg);
+}
+
+.Wrap {
+	overflow: hidden;
+}
+
+.Main {
+	--padding: 3rem;
+	padding-bottom: var(--padding);
+
+	@include mediaUp(sm) {
+		--padding: 3.5rem;
+	}
+
+	@include mediaUp(md) {
+		--padding: 2.5rem;
+	}
+
+	@include mediaUp(lg) {
+		--padding: 3.75rem;
+	}
+}

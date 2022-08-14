@@ -1,0 +1,136 @@
+.FormInput {
+	width: 100%;
+	height: auto;
+	padding: 23px 21px;
+	border: none;
+	display: block;
+	background-color: var(--mutedLightest);
+	background-repeat: no-repeat;
+	box-shadow: none;
+	border-radius: 8px;
+	transition:
+		background-color $duration linear,
+		border-color $duration linear,
+		color $duration linear;
+	resize: none;
+	color: var(--intense);
+	font-size: 14px;
+	line-height: 1.2;
+	font-family: inherit;
+	font-weight: 400;
+
+	@include placeholder() {
+		color: var(--major);
+	}
+
+	@include mediaUp(md) {
+		padding: 23px 21px;
+	}
+}
+
+.FormInput:focus,
+.FormInput:focus-within {
+	background-color: var(--bg);
+	color: var(--intense);
+	box-shadow:
+		0 0 0 4px rgba(0,0,0,.1);
+	outline: none;
+}
+
+.FormInput--xl {
+	padding: 13px 18px;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+textarea.FormInput {
+	height: 62px;
+
+	@include mediaUp(md) {
+		height: 108px;
+	}
+}
+
+.Toggle {
+	position: relative;
+}
+
+.Toggle__input {
+	@include visuallyHidden;
+}
+
+.Toggle__button {
+	padding: 15px 26px;
+	display: inline-block;
+	background-color: var(--bg);
+	border: 2px solid var(--minor);
+	border-radius: 61px;
+	color: var(--minor);
+	font-size: .875rem;
+	line-height: 1.1;
+	font-family: var(--fontDecor);
+	font-weight: 700;
+	white-space: nowrap;
+	transition:
+		background-color $duration-sm,
+		border-color $duration-sm,
+		color $duration-sm;
+	cursor: pointer;
+}
+
+.Toggle__input:checked + .Toggle__button {
+	color: var(--inverse);
+	background-color: var(--minor);
+}
+
+.Radio {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	cursor: pointer;
+  font-size: .875rem;
+	line-height: 1.1;
+}
+
+.Radio input {
+  width: 14px;
+  height: 14px;
+	flex-shrink: 0;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font-size: inherit;
+	line-height: inherit;
+  color: currentColor;
+  border: 1px solid var(--minor);
+  border-radius: 50%;
+	display: grid;
+  place-content: center;
+	cursor: inherit;
+}
+
+.Radio input:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+	background-color: var(--minor);
+}
+
+.Radio input:checked::before {
+  transform: scale(1);
+}
+
+.Radio__label {
+	margin-left: 7px;
+	display: block;
+	font-family: var(--fontDecor);
+	white-space: nowrap;
+	width: fit-content;
+}
+
+.Radio + .Radio {
+	margin-top: 1.25rem;
+}

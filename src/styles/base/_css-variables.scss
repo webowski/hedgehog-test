@@ -1,0 +1,46 @@
+:root {
+	// Text
+	--fontMain:             #{$fontMain};
+	--fontDecor:            #{$fontDecor};
+	--fontSize:             .75rem;
+	--lineHeight:           1.464;
+
+	// Color
+	--brand:                #{$brand};
+	--brand2:               #{$brand2};
+	--brand3:               #{$brand3};
+		// --voice:                #{$voice};
+		// --accent:               #{$accent};
+		// --accentAlter:          #{$accentAlter};
+		// --success:              #{$success};
+		// --danger:               #{$danger};
+	--intense:              #{$intense};
+	--major:                #{$major};
+	--minor:                #{$minor};
+	--muted:                #{$muted};
+	--mutedLighter:         #{$mutedLighter};
+	--mutedLightest:        #{$mutedLightest};
+		// --disabled:             #{$disabled};
+	--inverse:              #{$inverse};
+	--bg:                   #{$bg};
+		// --border:               #{$border};
+
+	// Dimensions
+	--containerMax:         #{$containerMax};
+	--sidePadding:          1.25rem;
+		// --gap:                  #{$gap};
+
+	@media (min-width: $sm) {
+		--sidePadding:          1.875rem;
+	}
+
+	@media (min-width: $md) {
+		--sidePadding:          2.5rem;
+		--fontSize:             .875rem;
+		--lineHeight:           1.599;
+	}
+
+	@media (min-width: $lg) {
+		--sidePadding:          3.75rem;
+	}
+}

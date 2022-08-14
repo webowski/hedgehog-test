@@ -1,0 +1,12 @@
+.Phone {
+	@include linkReset;
+	display: flex;
+	align-items: center;
+	font-size: 1.375rem;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.Phone .Circle {
+	margin-right: 1.25rem;
+}

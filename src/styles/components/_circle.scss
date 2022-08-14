@@ -1,0 +1,44 @@
+.Circle {
+	--size: clamp(35px, 6vw, 69px);
+	width: var(--size);
+	height: var(--size);
+	border-radius: 100%;
+	background-color: var(--minor);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.Circle.-xs {
+	width: 19px;
+	height: 19px;
+}
+
+.Circle.-lg {
+	--size: clamp(92px, 20vw, 152px);
+	width: var(--size);
+	height: var(--size);
+	box-shadow:
+		4px 4px 20px #C2CCCA,
+		-8px -8px 20px #FFFFFF;
+}
+
+.Circle.-brand {
+	background-color: var(--brand);
+}
+
+.Circle.-brand2 {
+	background-color: var(--brand2);
+}
+
+.Circle.-brandGradient {
+	box-shadow:
+		-4px -4px 20px #FFFFFF,
+		4px 4px 20px #CFD7D3;
+	background-image: linear-gradient(
+		to top,
+		var(--brand3) 12.29%,
+		var(--brand) 83.89%
+	);
+}
